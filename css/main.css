@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: VarelaRound-Regular;
+    src: url(Varela_Round/VarelaRound-Regular.ttf);
+}
 /* reset browser styles */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
@@ -33,7 +36,7 @@ table {
 
 html, body {
   height: 100%;
-  font-family: 'Varela Round';
+  font-family: 'VarelaRound-Regular', sans-serif;
 }
 flexWrapper {
   display: flex;
@@ -85,7 +88,7 @@ div1 {
 }
 div2 {
   padding-top: 8.5vw;
-  padding-right: .5vw;
+  padding-right: .9vw;
   display: flex;
   align-self: center;
 }
@@ -107,7 +110,6 @@ start {
   align-self: center;
   position: absolute;
   cursor: pointer;
-
   z-index: 3;
 }
 start:hover {
@@ -165,7 +167,7 @@ flexBox2 {
   mix-blend-mode: color-dodge;
 }
 .freeze {
-pointer-events: none;
+  pointer-events: none;
 }
 /*@keyframes levelModal {
   from {
