@@ -104,8 +104,6 @@ $( document ).ready( function page() {
 
   function replay() { // replays entire pc[] at 1 second intervals, then clears user[] & starts UserInput()
 
-    console.log( 'replay', user, pc, index );
-
     $( 'pad' ).addClass( 'freeze' );
 
     for ( var i = 0; i < pc.length; i++ ) {
@@ -159,22 +157,16 @@ $( document ).ready( function page() {
 
       user.push( '#' + this.id ); // pushes #pad to user[]
 
-      console.log( 'USER CLICK', user, pc, index );
-
       if ( JSON.stringify( user ) !== JSON.stringify( pc ) ) {
 
         if ( user[ index ] !== pc[ index ] ) {
           // replay() clears index
-
-          console.log( 'FAIL', user, pc, index );
 
           wrongMove();
 
         } // closes inner-if
 
         else {
-
-          console.log( 'INDEX++', user, pc, index );
 
           index++;
 
@@ -185,8 +177,6 @@ $( document ).ready( function page() {
       } // closes outer-if
 
       else {
-
-        console.log( 'CHECKLEVEL', user, pc, index );
 
         checkLevel();
 
