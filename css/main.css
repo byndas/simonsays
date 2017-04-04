@@ -1,0 +1,194 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+  font-size: 62.5%;
+  font: serif;
+}
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end reset browser styles */
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+flexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: rgb(57, 56, 74);
+}
+flexBox0 {
+  width: 50vw;
+  height: 50vw;
+  mix-blend-mode: screen;
+}
+strict {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 2.5vw;
+  border-radius: 100%;
+  background-color: rgb(57, 56, 74);
+  opacity: .3;
+  height: 17vw;
+  width: 17vw;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  color: snow;
+  cursor: pointer;
+  mix-blend-mode: multiply;
+  font-weight: 400;
+}
+.strictModeOn {
+  background-color: rgb(44,52,70);
+  opacity: 1;
+}
+strict:hover {
+  opacity: .75;
+}
+div1 {
+  padding-top: 1.4vw;
+  padding-right: .9vw;
+  display: flex;
+  align-self: center;
+}
+div2 {
+  padding-top: 8.5vw;
+  padding-right: .5vw;
+  display: flex;
+  align-self: center;
+}
+start {
+  display: flex;
+  font-size: 6vw;
+  height: 8vw;
+  width: 8vw;
+  background-color: snow;
+  color: rgb(57, 56, 74);
+  opacity: .5;
+  border-radius: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  cursor: pointer;
+
+  z-index: 3;
+}
+start:hover {
+  opacity: .75;
+  background-color: rgb(57, 56, 74);
+  color: snow;
+}
+flexBox1 {
+  display: flex;
+  flex: 1;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+#pad1 {
+  display: flex;
+  border-top-left-radius: 100%;
+  background-image: linear-gradient( 45deg, rgb(25,152,205), rgb(251,96,106) );
+  height: 25vw;
+  width: 25vw;
+  cursor: pointer;
+}
+#pad2 {
+  display: flex;
+  border-top-right-radius: 100%;
+  background-image: linear-gradient( 135deg, rgb(251,96,106), rgb(280,280,150) );
+  height: 25vw;
+  width: 25vw;
+  cursor: pointer;
+}
+flexBox2 {
+  display: flex;
+  flex: 1;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+#pad3 {
+  display: flex;
+  background-image: linear-gradient( 135deg, rgb(25,152,205), rgb(20,241,185) );
+  border-bottom-left-radius: 100%;
+  height: 25vw;
+  width: 25vw;
+  cursor: pointer;
+}
+#pad4 {
+  display: flex;
+  background-image: linear-gradient( 45deg,  rgb(20,241,185), rgb(280,280,150) );
+  border-bottom-right-radius: 100%;
+  height: 25vw;
+  width: 25vw;
+  cursor: pointer;
+}
+.blackout {
+  background: #13192d !important;
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+}
+.freeze {
+pointer-events: none;
+}
+/*@keyframes levelModal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.showsLevel {
+   animation: levelModal 1s alternate 2;
+}*/
+
+/*
+@media (max-width: 480px) {  // phone widths
+  .flexbox0 {
+    max-width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) { // tablet widths
+  .flexbox0 {
+    max-width: 500px;
+    height: 500px;
+  }
+}*/
