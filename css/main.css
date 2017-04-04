@@ -33,7 +33,7 @@ table {
 
 html, body {
   height: 100%;
-  /*font-family: sans-serif;*/
+  font-family: sans-serif;
 }
 flexWrapper {
   display: flex;
