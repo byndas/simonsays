@@ -1,5 +1,8 @@
 var pc = [], user = [], level = 0, index = 0, audio = [ '#a0', '#a1', '#a2', '#a3' ];
 
+document.onselectstart = new Function("return false");
+
+document.ondragstart = new Function("return false");
 
 $( document ).ready( function page() {
 
@@ -228,6 +231,8 @@ $( document ).ready( function page() {
   sound();
 
   $( 'start' ).click( function startGame() {
+
+    $( 'pad' ).removeClass( 'blackout' );
 
     level = 0;
 
